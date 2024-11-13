@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
       numeroTerminal: '1',
       cnpjLoja: '05481336000137',
       cnpjAutomacao: '05481336000137',
-      tipoPinPad: TipoPinPad.bluetooth,
+      tipoPinPad: TipoPinPad.usb,
       parametrosAdicionais: '',
     );
 
