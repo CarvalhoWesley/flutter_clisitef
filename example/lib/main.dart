@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     CliSiTefConfiguration configuration = CliSiTefConfiguration(
-      enderecoSitef: '177.87.37.40',
+      enderecoSitef: '192.168.18.11',
       codigoLoja: '0',
       numeroTerminal: '1',
       cnpjLoja: '05481336000137',

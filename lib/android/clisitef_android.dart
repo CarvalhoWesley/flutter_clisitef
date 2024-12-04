@@ -170,7 +170,7 @@ class CliSiTefAndroid implements CliSiTefSDK {
       'valor': valorSitef.toString(),
       'cupomFiscal': cupomFiscal,
       'dataFiscal': DateFormat('yyyyMMdd').format(dataFiscal),
-      'horario': DateFormat('hhmmss').format(dataFiscal),
+      'horario': DateFormat('HHmmss').format(dataFiscal),
       'operador': operador,
       'restricoes': restricoes,
     });
