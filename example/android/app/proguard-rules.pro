@@ -1,0 +1,2 @@
+-keep class br.com.setis.** { *; }
+-keep class br.com.softwareexpress.** { *; }
