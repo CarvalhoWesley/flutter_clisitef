@@ -15,13 +15,16 @@ class PinPadMethods(cliSiTef: CliSiTef): SiTefClient(cliSiTef) {
 
     @SuppressLint("LongLogTag")
     fun isPresent() {
-        try {
-            success(cliSiTef.pinpad.isPresent)
-        } catch (e: Exception) {
-            success(false)
-        } catch (e: Error) {
-            Log.e("PinPadMethods::isPresent", e.toString());
-            success(false)
-        }
+        Thread {
+            try {
+                val result = cliSiTef.pinpad.isPresent // Executa na thread separada
+                success(result) // Chama o callback com o resultado
+            } catch (e: Exception) {
+                success(false) // Em caso de exceção, retorna `false`
+            } catch (e: Error) {
+                Log.e("PinPadMethods::isPresent", e.toString())
+                success(false)
+            }
+        }.start()
     }
 }
