@@ -34,7 +34,7 @@ abstract class CliSiTefSDK {
       bool confirma, String cupomFiscal, DateTime dataFiscal);
 
   Future<bool> finishLastTransaction(bool confirma);
-//https://dev.softwareexpress.com.br/docs/sitef-interface-simplificada/tabela_de_codigos_meios_pagamento/ - Muito grande para usar ENUM
+  //https://dev.softwareexpress.com.br/docs/sitef-interface-simplificada/tabela_de_codigos_meios_pagamento/ - Muito grande para usar ENUM
   Future<bool> startTransaction(
     int modalidade,
     double valor,
